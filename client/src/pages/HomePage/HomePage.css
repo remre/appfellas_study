@@ -1,0 +1,65 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  width: 95%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 20px;
+}
+
+.flight-filter {
+  background-color: #ffffff;
+
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Tam genişlik kullanılır */
+}
+
+.lower-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.flight-list {
+  flex: 3;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-bar {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+}

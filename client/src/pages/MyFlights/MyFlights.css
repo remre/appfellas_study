@@ -1,0 +1,136 @@
+.my-flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 10px 10px 10px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.my-flight-info {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin: 10px 10px 10px 10px;
+  padding-right: 20px;
+}
+
+.my-flight-time h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+.my-flight-middle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 10px 10px 10px;
+}
+.my-flight-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0;
+}
+
+.my-airline-name p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.my-flight-details-link {
+  display: block;
+  color: #0071eb;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+.my-flight-details-link:hover {
+  text-decoration: underline;
+}
+
+.my-flight-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 30px;
+}
+
+.my-flight-summary p {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.my-flight-route {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.my-flight-route p {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.my-flight-prices {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.my-price-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.my-price-category p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.my-price-category h3 {
+  margin: 5px 0 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .my-flight-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .my-flight-info {
+    width: 100%;
+  }
+
+  .my-flight-prices {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .my-price-category {
+    width: 30%;
+  }
+}

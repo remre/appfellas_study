@@ -1,0 +1,51 @@
+:root {
+  --header-bg-color: #f4f3f8;
+  --header-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --text-color: #333;
+  --font-size-large: 24px;
+  --font-size-medium: 16px;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+}
+.plane-icon {
+  width: 40px;
+  height: 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium);
+  background-color: var(--header-bg-color);
+  box-shadow: var(--header-shadow);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: var(--spacing-small);
+}
+
+.site-title {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: var(--spacing-medium);
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,145 @@
+/* Container for the flight card */
+.flight-card {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header section with flight route */
+.flight-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.flight-header h3 {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+/* Flight info section (departure, duration, arrival) */
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flight-section {
+  flex: 1;
+  text-align: center;
+}
+
+.flight-section.departure {
+  text-align: left;
+}
+
+.flight-section.arrival {
+  text-align: right;
+}
+
+.flight-info p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.flight-info p strong {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Footer section with price and book button */
+.flight-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price-info {
+  text-align: left;
+}
+
+.price-info p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price-info p + p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+}
+
+.book-flight-button {
+  background-color: #6f42c1;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.book-flight-button:hover {
+  background-color: #563d7c;
+}
+
+/* Link styling for flight details */
+.flight-details-link {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.flight-details-link a {
+  color: #6f42c1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.flight-details-link a:hover {
+  color: #563d7c;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+  .flight-card {
+    padding: 15px;
+  }
+
+  .flight-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flight-section {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .book-flight-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .flight-details-link a {
+    font-size: 12px;
+  }
+}
