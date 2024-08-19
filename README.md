@@ -53,7 +53,6 @@ This project fetches flight data from the Schiphol Airport API, allowing users t
 
    ```sh
    git clone https://github.com/remre/appfellas_study.git
-   cd appfellas_assignment
    ```
 
 2. Install dependencies for both client and server:
