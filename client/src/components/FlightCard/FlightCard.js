@@ -30,8 +30,8 @@ const FlightCard = ({ flight }) => {
     flight.estimatedLandingTime
   );
   const price = `$${Math.floor(Math.random() * 900) + 100}`;
-  const isNonstop = flight.route.destinations.length === 1;
-  const stopInfo = isNonstop ? 'Nonstop' : '1 stop';
+  // const isNonstop = flight.route.destinations.length === 1;
+  // const stopInfo = isNonstop ? 'Nonstop' : '1 stop';
 
   useEffect(() => {
     // Fetch departure and arrival city and airport details
@@ -90,7 +90,7 @@ const FlightCard = ({ flight }) => {
       departureTime,
       arrivalTime,
       duration: durationFormatted,
-      stopInfo,
+      // stopInfo,
       airline: airlineName,
       flightName: flight.flightName,
       price,
@@ -120,7 +120,7 @@ const FlightCard = ({ flight }) => {
         departureDate={departureDate}
         departureAirport={departureAirport}
         durationFormatted={durationFormatted}
-        stopInfo={stopInfo}
+        // stopInfo={stopInfo}
         airlineName={airlineName}
         arrivalTime={arrivalTime}
         arrivalAirport={arrivalAirport}
